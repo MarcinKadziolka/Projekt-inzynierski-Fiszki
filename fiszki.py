@@ -1196,30 +1196,10 @@ def podsumowanie():
 
 
 
-def test():
-    run = True
-    while run:
-        event_list = pygame.event.get()
-        for event in event_list:
-            if event.type == pygame.QUIT:
-                run = False
-
-
-        selected_option = list1.update(event_list)
-        if selected_option >= 0:
-            print(selected_option)
-
-        
-        screen.fill((color_background))
-        list1.draw(screen)
-        pygame.display.flip()
-    
 
 
 
 
 
-
-#test()
 main_menu()
-#wynik()
+
